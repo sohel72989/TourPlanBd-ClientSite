@@ -3,6 +3,7 @@ import { Image } from 'react-bootstrap';
 import './ManageAllPackage.css'
 import Header from '../Shared/Header';
 import Footer from '../Shared/Footer';
+import { Link } from 'react-router-dom';
 
 
 const ManageAllPackage = () => {
@@ -59,11 +60,12 @@ const ManageAllPackage = () => {
                                     <td>${pack.price} </td>
                                     <td>{pack.duration} </td>
                                     <td className="text-center">
-                                        <button className="btn btn-success">Update</button><br />
+                                        <Link to={`/package/updatePackage/${pack._id}`}>
+                                            <button className="btn btn-success">Update</button>
+                                        </Link>
+                                        <br />
                                         <button onClick={() => handleDelete(pack._id)} className="btn btn-secondary ms-2 mt-2" >Delete</button>
                                     </td>
-
-
                                 </tr>)
                         }
 

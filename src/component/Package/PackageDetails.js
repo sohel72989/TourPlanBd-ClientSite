@@ -6,6 +6,7 @@ import Header from '../Shared/Header';
 
 const PackageDetails = () => {
     const { id } = useParams();
+    console.log(id);
     const [packages, setPackages] = useState([]);
     useEffect(() => {
         fetch('http://localhost:5000/package')
@@ -13,7 +14,7 @@ const PackageDetails = () => {
             .then(data => setPackages(data));
 
     }, []);
-    const details = packages.find(packag => packag.id === parseInt(id));
+    const details = packages.find(packag => packag._id === id);
     console.log(details);
     //
     return (
@@ -31,7 +32,7 @@ const PackageDetails = () => {
                     <div className="col-md-6">
                         <div className="py-3">
                             <h1 className="text">{details?.name}</h1>
-                            <p>Package No. {id}</p>
+                            <p>Package Id. {id}</p>
                         </div>
                         <h5>Package Name: <span className="text-success">{details?.package}</span></h5>
                         <h6>Duration: {details?.duration}</h6>
@@ -39,7 +40,7 @@ const PackageDetails = () => {
                         <p>Fee: ${details?.price}</p><br />
                         <h6>Details:</h6>
                         <p>{details?.description}</p>
-                        <button className="btn btn-color mt-3 py-3 px-5 btn">Booking Now</button>
+                        <NavLink to={`/booking/${id}`} className="btn btn-color mt-3 py-3 px-5">Booking Now</NavLink>
                         <NavLink to={`/packages`} className="btn btn-color mt-3 py-3 px-5 btn ms-3">Back</NavLink>
 
                     </div>

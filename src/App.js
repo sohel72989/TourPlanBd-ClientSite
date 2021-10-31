@@ -14,6 +14,9 @@ import PackageDetails from './component/Package/PackageDetails';
 import Services from './component/Home/Services';
 import AddPackage from './component/AddPackage/AddPackage';
 import ManageAllPackage from './component/ManageAllPackage/ManageAllPackage';
+import UpadatePackage from './component/UpdatePackage/UpadatePackage';
+import MyBooking from './component/MyBooking/MyBooking';
+import Booking from './component/MyBooking/Booking';
 
 function App() {
   return (
@@ -30,9 +33,20 @@ function App() {
           <Route path="/services">
             <Services></Services>
           </Route>
+          <Route path="/booking/:id">
+            <Booking></Booking>
+          </Route>
+
+          <Route path="/myBooking">
+            <MyBooking></MyBooking>
+          </Route>
           <Route path="/packages/:id">
             <PackageDetails></PackageDetails>
           </Route>
+          <Route path="/package/updatePackage/:id">
+            <UpadatePackage></UpadatePackage>
+          </Route>
+
           <Route path="/manageAllPackage">
             <ManageAllPackage></ManageAllPackage>
           </Route>

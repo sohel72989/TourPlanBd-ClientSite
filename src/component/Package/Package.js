@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Package = (props) => {
-    const { packages, img, description, id } = props.package;
+    const { packages, img, description, _id } = props.package;
     return (
         <div>
             <div className="col">
@@ -11,7 +11,7 @@ const Package = (props) => {
                     <div className="card-body">
                         <h5 className="card-title">{packages}</h5>
                         <p className="card-text">{description}</p>
-                        <NavLink to={`/packages/${id}`} className="btn btn-color py-2 px-5">More Details</NavLink>
+                        <NavLink to={`/packages/${_id}`} className="btn btn-color py-2 px-5">More Details</NavLink>
 
                     </div>
                 </div>

@@ -14,8 +14,8 @@ const ServiceDetails = () => {
             .then(res => res.json())
             .then(data => setServices(data))
     }, []);
-    const details = services.find(service => service.id === parseInt(id));
-    console.log(details)
+    const details = services.find(service => service._id === id);
+    console.log(details);
     return (
         <div>
             <Header></Header>
@@ -39,7 +39,7 @@ const ServiceDetails = () => {
                         <p>Fee: ${details?.price}</p><br />
                         <h6>Details:</h6>
                         <p>{details?.description}</p>
-                        <button className="btn btn-color mt-3 py-3 px-5 btn">Booking Now</button>
+                        <NavLink to={`/booking/${id}`} className="btn btn-color mt-3 py-3 px-5">Booking Now</NavLink>
                         <NavLink to={'/home'} className=" border mt-3 py-3 px-5 btn ms-3">Back</NavLink>
                     </div>
                 </div>
