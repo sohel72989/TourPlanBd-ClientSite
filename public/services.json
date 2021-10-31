@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "name": "Rangamati",
+        "description": "Rangamati is the most popular destination in Chittagong Hill Tracts covered by the scenic beauty of Kaptai Lake, plenty of small hills and tribal people. The lake was made in 1960 dotted with island is undoubtedly beautiful. Boat cruise through the lake would be the best way to spend your day. This place is also inhabited by the many indigenous group of People like Chakma, Marma & Tripura. The tribal lifestyle, handicrafts market, weaving factories, the largest tribal floating market Bonorupa and the Chakma King house are the richest sites to explore.",
+        "package": "Chill Hobe Chill",
+        "duration": "5 Days / 3 Nights",
+        "price": 500,
+        "img": "https://cdn.pixabay.com/photo/2020/06/14/12/56/suspension-bridge-5297744_960_720.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Sundarbans Mangrove Forest",
+        "description": "The Sundarbans mangrove forest, one of the largest such forests in the world and UNESCO World Heritage Site, lies on the delta of the Ganges, Brahmaputra and Meghna rivers on the Bay of Bengal. It is adjacent to the border of India but a major part of the forest in Bangladesh. The site is intersected by a complex network of tidal waterways, mudflats and small islands of salt-tolerant mangrove forests, and presents an excellent example of ongoing ecological processes. This is known for its wide ranges of fauna including 260 species of birds....",
+        "package": "Cholo Ghuri Aksathe",
+        "duration": "7 Days / 5 Nights",
+        "price": 700,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWvLt0aMtjJtuHDnl79Wx24UHV2wivgvudw&usqp=CAU"
+    },
+    {
+        "id": 3,
+        "name": "Cox's Bazar",
+        "description": "Cox’s bazar–the longest natural unbroken sandy beach (155 km) in the world! Miles of silvery sands, surfing waves, rare conch shells, towering cliffs, colorful pagodas, Buddhist temples and tribal life -this is Cox’s bazaar, the tourist capital of Bangladesh. The morning fish market, a few ancient wooden temples in Ramu, is the most attraction in Cox’s Bazaar.Trip to Sonadia and Moheskhali are memorable experiences of a life-time. This is a very good place to spend the leisure in Bangladesh.The most famous visiting place.Hurry up visit with me!!!.....",
+        "package": "Cox'shitour",
+        "duration": "9 Days / 7 Nights",
+        "price": 900,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyPL0mUuMZKHOHKWjKYGznCrNDlQ1m90DCaQ&usqp=CAU"
+    },
+    {
+        "id": 4,
+        "name": "Saint Martin Island",
+        "description": "Saint Martin Island, the only Coral Island of Bangladesh- is inhabited by 7 to 8 thousands of people. Most of them are depended on fishing or fishing related activities. There are beautiful corals on the southern corner of the island. Chera Dwip, another small island should be visited on your trip by the boat. The water is much clearer here compared to another beach. It is possible to snorkeling here if you carry your own equipment. It is fantastic if you stay there during the full moon time.",
+        "duration": "9 Days / 7 Nights",
+        "price": 1000,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN3MWu7AuiP3uqDz94tM4TEbj6aK6lq7XgFA&usqp=CAU"
+    },
+    {
+        "id": 5,
+        "name": "Bagerhat",
+        "description": "Bagerhat known as heritage city declared by UNESCO, an open-air museum of medieval architectural heritages formerly known as Khalifatabad, was founded by the Turkish general Ulugh Khan Jahan in the 15th century. The city’s infrastructure reveals unusual technical skill and an exceptional number of mosques and early Islamic monuments, many built of brick are more ancient than anywhere in Bangladesh except Dhaka. The historic city, listed by Forbes as one of the 15 lost cities.",
+        "package": "Bagher Hat Dekhbo",
+        "duration": "5 Days / 3 Nights",
+        "price": 400,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDjkvgLJP8rnq0h5MtCfY9kyL65DoqQ66ZMw&usqp=CAU"
+    },
+    {
+        "id": 6,
+        "name": "Kuakata",
+        "description": "Kuakata is one of the rarest places which has the unique beauty of offering the full view of the rising and setting of red sun in the water of the Bay of Bengal in a calm environment. That perhaps makes Kuakata one of the world’s unique beaches. Locally known as Sagar Kannya or Daughter of the Sea is a rare scenic beauty on the southernmost point of Bangladesh. The excellent combination of the picturesque natural beauty, sandy beach, blue sky, huge expanse of water of the Bay.",
+        "package": "KataKuya",
+        "duration": "5 Days / 3 Nights",
+        "price": 500,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2gT7AUbdYXUFwzcG40OYFsib8ujb-V3RUA&usqp=CAU"
+    }
+]

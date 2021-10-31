@@ -1,0 +1,50 @@
+[
+    {
+        "id": 7,
+        "description": "Visit Srimangal, the tea capital known as tea camellia, green carpet or tea mountain covered by a lot of tea estates including the largest one in the world. Explore the terraced tea garden, pineapple, rubber and lemon plantations from a beautiful landscape and make an adventure on the last remaining tropical rainforest Lawacharra, the small tract of dense forests is heaven.",
+        "package": "Srimangal Tea Plantation",
+        "duration": "4 Days / 3 Nights",
+        "price": 300,
+        "img": "https://pathfriend-bd.com/wp-content/uploads/2019/08/Tea-Plantation-Tour-Bd-150x150.jpg"
+    },
+    {
+        "id": 8,
+        "description": "Visit all 7 Shaktipeeth Temples of Bangladesh located in 6 divisions and other famous Hindu ruins & Temples including Puthia. Enjoy the famous 150 years old Rocket Paddle Steamer ride, Experience Floating Market in Barisal, Hike on Chandranath Hill in Chittagong & Tea gardens Sylhet, experience Jamdani Weaving Village and explore riverain Bangladesh in single tour",
+        "package": "Shaktipeeth Tour Bangladesh",
+        "duration": "7 Days / 5 Nights",
+        "price": 500,
+        "img": "https://pathfriend-bd.com/wp-content/uploads/2021/01/Shaktipeeth-Bangladesh-150x150.jpg"
+    },
+    {
+        "id": 9,
+        "description": "Explore the Sundarbans, the largest mangrove forest in the world & UNESCO World Heritage Site, intersected by a complex network of tidal waterways, mudflats and small islands. It’s known for its wide range of fauna, including 270 species of the bird, estuarine crocodiles, reptiles & mammals, spotted deer, clawless otter and the man-eating Royal Bengal tiger.",
+        "package": "Sundarbans Tour Bangladesh",
+        "duration": "10 Days / 8 Nights",
+        "price": 1100,
+        "img": "https://pathfriend-bd.com/wp-content/uploads/2019/08/Sundarban-150x150.jpg"
+    },
+    {
+        "id": 10,
+        "description": "Enjoy overnight river journey by famous Rocket Paddle Steamer and experience the fishing by otters in Narail. Ride a small country boat with otters and learn the techniques of fishing on the river. Visit the old & new part of Dhaka city and the UNESCO world heritage Sixty Dome Mosque, Khan Jahan Ali Shrine and Nine Domed Mosque in Bagerhat .Visit the destination.",
+        "package": "Otter Fishing Tour Bangladesh",
+        "duration": "2 Days / 1 Nights",
+        "price": 200,
+        "img": "https://pathfriend-bd.com/wp-content/uploads/2019/08/Otter-Fishing-Tour-150x150.jpg"
+    },
+    {
+        "id": 11,
+        "description": "Explore Rangamati, Bandarban & Cox’s Bazaar, three districts in Chittagong division are the popular places in Bangladesh and center of natural beauty. Meet 13 different indigenous people & know their lifestyle, make the cruise on the trans-boundary Sangu river & largest human-made Kaptai Lake, visit popular hill points, waterfalls, the famous Golden temple, King.",
+        "package": "Rangamati, Bandarban & Cox’s Bazar",
+        "duration": "15 Days / 13 Nights",
+        "price": 2500,
+        "img": "https://pathfriend-bd.com/wp-content/uploads/2019/08/Rangamati-Bandarban-Coxs-Ba-150x150.jpg"
+    },
+    {
+        "id": 12,
+        "description": "Spend your holiday in Cox’s Bazar– the longest natural sea beach in the world and the only coral island in the region called Saint Martin. Visit a fishing port and the fishermen villages to know the lifestyles of fishermen, Ramu Buddhist Temple in Maheshkhali Island. Explore Himchari & Inani sea beaches and the Coral Island Saint Martin. Eat fresh sea fish & spend your leisure.",
+        "package": "Cox’s Bazar & Saint Martin Tour Bangladesh",
+        "duration": "7 Days / 5 Nights",
+        "price": 1500,
+        "img": "https://pathfriend-bd.com/wp-content/uploads/2019/08/Highlights-of-Bangladesh-150x150.jpg"
+    }
+]

@@ -1,23 +1,65 @@
-import logo from './logo.svg';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import AboutUs from './component/AboutUs/AboutUs';
+import Home from './component/Home/Home';
+import Login from './component/Login/Login';
+import Registration from './component/Registratration/Registration';
+import NotFound from './component/NotFound/NotFound';
+import ServiceDetails from './component/ServiceDetails/ServiceDetails';
+// import AuthProvider from './context/AuthProvider';
+// import PrivateRoute from './component/PrivateRoute/PrivateRoute';
+import Packages from './component/Package/Packages';
+import PackageDetails from './component/Package/PackageDetails';
+import Services from './component/Home/Services';
+import AddPackage from './component/AddPackage/AddPackage';
+import ManageAllPackage from './component/ManageAllPackage/ManageAllPackage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      {/* <AuthProvider> */}
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route exact path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/services">
+            <Services></Services>
+          </Route>
+          <Route path="/packages/:id">
+            <PackageDetails></PackageDetails>
+          </Route>
+          <Route path="/manageAllPackage">
+            <ManageAllPackage></ManageAllPackage>
+          </Route>
+          <Route path="/addNewPackage">
+            <AddPackage></AddPackage>
+          </Route>
+          <Route exact path="/home/:id">
+            <ServiceDetails></ServiceDetails>
+          </Route>
+          <Route exact path="/packages">
+            <Packages></Packages>
+          </Route>
+          <Route exact path="/about-us">
+            <AboutUs></AboutUs>
+          </Route>
+          <Route exact path="/login">
+            <Login></Login>
+          </Route>
+          <Route exact path="/registration">
+            <Registration></Registration>
+          </Route>
+          <Route exact path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+      </Router>
+      {/* </AuthProvider> */}
     </div>
   );
 }
