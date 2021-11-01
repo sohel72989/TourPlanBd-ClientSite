@@ -17,63 +17,66 @@ import ManageAllPackage from './component/ManageAllPackage/ManageAllPackage';
 import UpadatePackage from './component/UpdatePackage/UpadatePackage';
 import MyBooking from './component/MyBooking/MyBooking';
 import Booking from './component/MyBooking/Booking';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './component/PrivateRoute/PrivateRoute';
+
 
 function App() {
   return (
     <div className="">
-      {/* <AuthProvider> */}
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/services">
-            <Services></Services>
-          </Route>
-          <Route path="/booking/:id">
-            <Booking></Booking>
-          </Route>
+      <AuthProvider>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <PrivateRoute path="/services">
+              <Services></Services>
+            </PrivateRoute>
+            <PrivateRoute path="/booking/:id">
+              <Booking></Booking>
+            </PrivateRoute>
 
-          <Route path="/myBooking">
-            <MyBooking></MyBooking>
-          </Route>
-          <Route path="/packages/:id">
-            <PackageDetails></PackageDetails>
-          </Route>
-          <Route path="/package/updatePackage/:id">
-            <UpadatePackage></UpadatePackage>
-          </Route>
+            <PrivateRoute path="/myBooking">
+              <MyBooking></MyBooking>
+            </PrivateRoute>
+            <PrivateRoute path="/packages/:id">
+              <PackageDetails></PackageDetails>
+            </PrivateRoute>
+            <PrivateRoute path="/package/updatePackage/:id">
+              <UpadatePackage></UpadatePackage>
+            </PrivateRoute>
 
-          <Route path="/manageAllPackage">
-            <ManageAllPackage></ManageAllPackage>
-          </Route>
-          <Route path="/addNewPackage">
-            <AddPackage></AddPackage>
-          </Route>
-          <Route exact path="/home/:id">
-            <ServiceDetails></ServiceDetails>
-          </Route>
-          <Route exact path="/packages">
-            <Packages></Packages>
-          </Route>
-          <Route exact path="/about-us">
-            <AboutUs></AboutUs>
-          </Route>
-          <Route exact path="/login">
-            <Login></Login>
-          </Route>
-          <Route exact path="/registration">
-            <Registration></Registration>
-          </Route>
-          <Route exact path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-      </Router>
-      {/* </AuthProvider> */}
+            <PrivateRoute path="/manageAllPackage">
+              <ManageAllPackage></ManageAllPackage>
+            </PrivateRoute>
+            <PrivateRoute path="/addNewPackage">
+              <AddPackage></AddPackage>
+            </PrivateRoute>
+            <PrivateRoute exact path="/home/:id">
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
+            <PrivateRoute exact path="/packages">
+              <Packages></Packages>
+            </PrivateRoute>
+            <Route exact path="/about-us">
+              <AboutUs></AboutUs>
+            </Route>
+            <Route exact path="/login">
+              <Login></Login>
+            </Route>
+            <Route exact path="/registration">
+              <Registration></Registration>
+            </Route>
+            <Route exact path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

@@ -45,7 +45,7 @@ const useFirebase = () => {
             setLoading(false);
         });
         return () => unsubscribe;
-    })
+    }, [])
 
     return {
         user,
