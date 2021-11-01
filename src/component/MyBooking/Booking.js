@@ -13,7 +13,7 @@ const Booking = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/booking', data)
+        axios.post('https://shrouded-atoll-15464.herokuapp.com/booking', data)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {

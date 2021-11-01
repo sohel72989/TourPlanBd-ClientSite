@@ -9,7 +9,7 @@ const AddPackage = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/package', data)
+        axios.post('https://shrouded-atoll-15464.herokuapp.com/package', data)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {

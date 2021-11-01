@@ -6,7 +6,7 @@ import Package from './Package';
 const Packages = () => {
     const [packages, setPackages] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/package')
+        fetch('https://shrouded-atoll-15464.herokuapp.com/package')
             .then(res => res.json())
             .then(data => setPackages(data));
     }, []);

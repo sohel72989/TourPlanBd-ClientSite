@@ -5,7 +5,7 @@ import Header from '../Shared/Header';
 const MyBooking = () => {
     const [bookings, setBookings] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/myBooking')
+        fetch('https://shrouded-atoll-15464.herokuapp.com/myBooking')
             .then(res => res.json())
             .then(data => setBookings(data))
     }, []);
@@ -13,7 +13,7 @@ const MyBooking = () => {
     const handleDelete = id => {
         const warning = window.confirm('Areyou sure delete this Booking?')
         if (warning) {
-            const url = `http://localhost:5000/myBooking/${id}`;
+            const url = `https://shrouded-atoll-15464.herokuapp.com/myBooking/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const ManageAllPackage = () => {
     const [packages, setPackages] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/package')
+        fetch('https://shrouded-atoll-15464.herokuapp.com/package')
             .then(res => res.json())
             .then(data => setPackages(data))
     }, []);
@@ -17,7 +17,7 @@ const ManageAllPackage = () => {
     const handleDelete = id => {
         const warning = window.confirm('Areyou sure delete this package?')
         if (warning) {
-            const url = `http://localhost:5000/package/${id}`;
+            const url = `https://shrouded-atoll-15464.herokuapp.com/package/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

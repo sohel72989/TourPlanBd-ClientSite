@@ -9,7 +9,7 @@ const UpdatePackage = () => {
 
     const [packages, setPackages] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/package/updatePackage/${id}`)
+        fetch(`https://shrouded-atoll-15464.herokuapp.com/package/updatePackage/${id}`)
             .then(res => res.json())
             .then(data =>
                 setPackages(data));
