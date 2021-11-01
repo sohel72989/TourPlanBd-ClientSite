@@ -15,7 +15,7 @@ const Header = () => {
             <Navbar collapseOnSelect expand="lg" variant="dark">
                 <Container>
                     <img className="logo me-2" src={logo} alt="" />
-                    <Navbar.Brand className="logo-name fs-3 ">TourPlan BD</Navbar.Brand>
+                    <Navbar.Brand className="logo-name fs-3 text-white-50">TourPlan BD</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
 
@@ -47,11 +47,11 @@ const Header = () => {
                                         <Navbar.Text className="me-2" >
                                             Hi, {user.displayName}
                                         </Navbar.Text>
-                                        <Button>
+                                        <Button className="btn btn-secondary">
                                             <NavLink onClick={logOut} className="text-decoration-none text-white" to={"/home"}>LogOut</NavLink>
                                         </Button>
                                     </div> :
-                                    <Button>
+                                    <Button className="header-bg">
                                         <NavLink className="text-decoration-none text-white " to="/login">Login</NavLink>
                                     </Button>
                             }

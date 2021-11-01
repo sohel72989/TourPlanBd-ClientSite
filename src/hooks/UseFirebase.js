@@ -17,12 +17,7 @@ const useFirebase = () => {
         return signInWithPopup(auth, googleProvider)
             .finally(() => { setLoading(false) });
     }
-    //email...................................
-    // const createUser = () => {
-    //     setLoading(true);
-    //     return createUserWithEmailAndPassword(auth, email, password)
-    //         .finally(() => { setLoading(false) });
-    // }
+
 
     const logOut = () => {
         setLoading(true);

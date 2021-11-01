@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
-import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 import UseAuth from '../../hooks/UseAuth';
 import icon from './../../img/logo/gmail.png';

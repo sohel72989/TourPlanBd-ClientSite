@@ -13,7 +13,7 @@ const Service = (props) => {
                         <h5 className="card-title fw-bold text">{name}</h5>
                         <p className="card-text "><small id="text-color">{duration}</small></p>
                         <p className="card-text">{description}</p>
-                        <NavLink to={`/home/${_id}`} className="btn btn-color py-2 px-5">Check Details</NavLink>
+                        <NavLink to={`/home/${_id}`} className="btn btn-color py-2 px-5">Check Bookings</NavLink>
 
                     </div>
                 </div>
